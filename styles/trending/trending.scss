@@ -1,0 +1,39 @@
+@import "../main.scss";
+
+.main-content-container {
+    .catergories-container {
+        width: 100%;
+        padding: 25px 25px 0;
+        background: #f9f9f9;
+        
+        ul {
+            max-width: 550px;
+            @extend %space-between;
+
+            li {
+                margin: 0 auto;
+                border-radius: 50%;
+                
+                a {
+                    text-align: center;
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                    }
+
+                    span {
+                        width: 100%;
+                        display: block;
+                        color: #606060;
+                        font-size: 14px;
+                        margin: 0 auto;
+                        font-weight: 500;
+                        margin: 8px auto 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
