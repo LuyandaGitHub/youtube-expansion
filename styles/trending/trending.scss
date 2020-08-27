@@ -3,15 +3,16 @@
 .main-content-container {
     .catergories-container {
         width: 100%;
-        padding: 25px 25px 0;
+        padding: 25px;
         background: #f9f9f9;
+        display: block;
+        border-bottom: 1px solid #0000001a;
         
         ul {
             max-width: 550px;
             @extend %space-between;
 
             li {
-                margin: 0 auto;
                 border-radius: 50%;
                 
                 a {
@@ -38,13 +39,14 @@
     }
 
     .trending-videos-container {
-        padding-top: 25px;
+        padding: 25px;
         background: #f9f9f9;
         
         .video {
             width: 100%;
             align-items: flex-start;
             @extend %flex-start;
+            margin-bottom: 16px;
 
             .image-container {
                 max-width: 250px;
@@ -56,8 +58,23 @@
             }
 
             .description-container {
-                .profile-container {
-                    display: none;
+                max-width: 600px;
+
+                h6 {
+                    font-weight: 400;
+                    color: #030303;
+                    font-size: 18px;
+                }
+
+                p {
+                    font-weight: 400;
+                    color: #606060;
+                    font-size: 13px;
+
+                    &:last-child {
+                        padding-top: 8px;
+                        margin-bottom: 8px;
+                    }
                 }
             }
         }

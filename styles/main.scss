@@ -94,6 +94,10 @@ body {
                 border-right: none;
                 width: calc(100% - 65px);
                 border: 1px solid #dcdcdc;
+
+                &:focus, &:active {
+                    outline: 1px solid #dcdcdc;
+                }
             }
 
             .search-btn {

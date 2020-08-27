@@ -126,6 +126,10 @@ body .icon {
   border: 1px solid #dcdcdc;
 }
 
+.header .search-container .search-form .search-bar:focus, .header .search-container .search-form .search-bar:active {
+  outline: 1px solid #dcdcdc;
+}
+
 .header .search-container .search-form .search-btn {
   margin: 0;
   width: 65px;
